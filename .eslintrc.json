@@ -10,5 +10,7 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "react/prop-types": "off"
+  }
 }

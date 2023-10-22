@@ -1,0 +1,13 @@
+.card {
+  background-color: #202020;
+  color: white;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  min-width: 50vw;
+  margin-top: 5%;
+}
+
+.card-header {
+  margin-top: 30%;
+}
