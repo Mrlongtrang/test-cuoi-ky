@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .flex-container {
@@ -9,4 +10,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  color: #fff;
+}
+
+.active-dot {
+  background: #fff;
 }

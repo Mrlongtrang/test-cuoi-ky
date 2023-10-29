@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
+import { EyeFilled, EyeInvisibleFilled } from '@ant-design/icons';
 import './index.css';
 
 export default function Input({
@@ -25,11 +25,8 @@ export default function Input({
           onChange={e => {
             if (required) {
               if (e.target.value) {
-                if (
-                  type === 'email' &&
-                  !e.target.value.includes('@gmail.com')
-                ) {
-                  setErrorMessage('Email address must include "@gmail.com"');
+                if (type === 'email' && !e.target.value.includes('@')) {
+                  setErrorMessage('Email address must include "@"');
                 } else {
                   setErrorMessage(undefined);
                 }
@@ -46,9 +43,9 @@ export default function Input({
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? (
-              <AiFillEyeInvisible size={15} color="white" />
+              <EyeInvisibleFilled size={15} color="white" />
             ) : (
-              <AiFillEye size={15} color="white" />
+              <EyeFilled size={15} color="white" />
             )}
           </span>
         )}

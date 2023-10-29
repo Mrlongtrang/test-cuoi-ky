@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Input from '../../components/Input';
+
 export default function ForgotPassword() {
   return (
     <div className="flex-container">
